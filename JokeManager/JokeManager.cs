@@ -17,7 +17,7 @@ namespace JokeManagerNamespace
             Config.password = "Qbert42Fish";
             Config.server = "IL-Server-002.uccc.uc.edu\\Mssqlserver2019";
             Config.database = "3045Fall2021FinalProject";
-            status = Utils.ExecuteNonQuery("INSERT INTO tJoke(UCID, Joke) VALUES( 'nicholdw', 'a cow does something')", System.Data.CommandType.Text,null, null);
+            status = Utils.ExecuteNonQuery("INSERT INTO tJoke(UCID, Joke) VALUES( '"+UCID+"', '"+joke+"')", System.Data.CommandType.Text,null, null);
 
             return status;
         }
